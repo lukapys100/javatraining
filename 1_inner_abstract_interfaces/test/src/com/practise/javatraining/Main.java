@@ -6,5 +6,8 @@ public class Main {
 	    System.out.println("Test line of code.");
         System.out.println("And another one.");
         System.out.println("One more");
+
+        TestClass testClass = new TestClass();
+        testClass.printResults();
     }
 }
