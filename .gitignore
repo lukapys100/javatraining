@@ -1,4 +1,5 @@
-# Default ignored files
-/1_inner_abstract_interfaces/test/.idea
-/1_inner_abstract_interfaces/test/out
-/1_inner_abstract_interfaces/test/test.iml
+*.xml
+*.html
+*.iml
+\1_inner_abstract_interfaces\test\out
+\1_inner_abstract_interfaces\test\.idea
