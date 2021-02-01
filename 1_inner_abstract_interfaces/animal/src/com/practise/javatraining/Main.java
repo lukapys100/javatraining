@@ -8,5 +8,12 @@ public class Main {
 	    goldenRetriever.bark();
 	    goldenRetriever.eat();
 	    goldenRetriever.drink();
+
+		System.out.println();
+
+	    Cat cat = new Cat("Filemon");
+	    cat.move();
+	    cat.eat();
+	    cat.drink();
     }
 }
