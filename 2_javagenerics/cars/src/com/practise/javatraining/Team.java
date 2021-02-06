@@ -2,11 +2,11 @@ package com.practise.javatraining;
 
 import java.util.ArrayList;
 
-public class Team {
-    private ArrayList<Car> carList = new ArrayList<>();
+public class Team<T extends Car> {
+    private ArrayList<T> carList = new ArrayList<>();
 
 
-    public boolean addCar(Car newCar){
+    public boolean addCar(T newCar){
         if(carList.contains(newCar) || newCar == null){
             System.out.println("Car called " + newCar + " is already in the team.");
             return false;
@@ -17,8 +17,8 @@ public class Team {
     }
 
     public void listCars() {
-        for (Car c : carList) {
-            System.out.println(c);
+        for (T car : carList) {
+            System.out.println(car);
         }
     }
 }

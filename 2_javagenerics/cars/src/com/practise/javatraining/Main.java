@@ -15,16 +15,27 @@ public class Main {
         Lamborghini lamborghini2 = new Lamborghini("Galardo");
         Lamborghini lamborghini3 = new Lamborghini("Diablo");
 
-        Team porscheTeam = new Team();
+        Team<Porsche> porscheTeam = new Team<>();
         porscheTeam.addCar(porsche1);
         porscheTeam.addCar(porsche2);
         porscheTeam.addCar(porsche3);
-        porscheTeam.addCar(ferrari1);
-        porscheTeam.addCar(lamborghini2);
+
+        Team<Ferrari> ferrariTeam = new Team<>();
+        ferrariTeam.addCar(ferrari1);
+        ferrariTeam.addCar(ferrari2);
+        ferrariTeam.addCar(ferrari3);
+
+        Team<Lamborghini> lamborghiniTeam = new Team<>();
+        lamborghiniTeam.addCar(lamborghini1);
+        lamborghiniTeam.addCar(lamborghini2);
+        lamborghiniTeam.addCar(lamborghini3);
 
         System.out.println();
-
         porscheTeam.listCars();
+        System.out.println();
+        ferrariTeam.listCars();
+        System.out.println();
+        lamborghiniTeam.listCars();
 
     }
 }
