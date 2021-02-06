@@ -4,8 +4,8 @@ public class Lamborghini extends Car {
 
     private int speed;
 
-    public Lamborghini(String model) {
-        super("Lamborghini", model);
+    public Lamborghini(String model, int cost) {
+        super("Lamborghini", model, cost);
     }
 
     @Override

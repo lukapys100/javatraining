@@ -1,12 +1,14 @@
 package com.practise.javatraining;
 
-public abstract class Car {
+public abstract class Car implements Comparable<Car>{
     private String mark;
     private String model;
+    private int cost;
 
-    public Car(String mark, String model) {
+    public Car(String mark, String model, int cost) {
         this.mark = mark;
         this.model = model;
+        this.cost = cost;
     }
 
     public String getMark() {
@@ -17,10 +19,24 @@ public abstract class Car {
         return model;
     }
 
+    public int getCost() {
+        return cost;
+    }
+
     public abstract void speedUp();
 
     @Override
     public String toString() {
         return mark + " " + model;
+    }
+
+    @Override
+    public int compareTo(Car car) {
+        if(this.getCost() > car.getCost()){
+            return -1;
+        }else if(this.getCost() < car.getCost()){
+            return 1;
+        }
+        return 0;
     }
 }
