@@ -27,7 +27,7 @@ public abstract class Car implements Comparable<Car>{
 
     @Override
     public String toString() {
-        return mark + " " + model;
+        return mark + " " + model + ": " + cost;
     }
 
     @Override

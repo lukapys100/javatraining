@@ -1,6 +1,7 @@
 package com.practise.javatraining;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Team<T extends Car> {
     private ArrayList<T> carList = new ArrayList<>();
@@ -17,6 +18,7 @@ public class Team<T extends Car> {
     }
 
     public void listCars() {
+        Collections.sort(carList, Collections.reverseOrder());
         for (T car : carList) {
             System.out.println(car);
         }
